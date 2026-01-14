@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sean Kehoe – Resume</title>
+<style>
+  :root{
+    --text:#111;
+    --muted:#555;
+    --accent:#0b5fff;
+    --rule:#e5e7eb;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font: 14.5px/1.45 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color:var(--text);
+    background:#fff;
+  }
+  .page{
+    max-width: 800px;
+    margin: 28px auto 56px;
+    padding: 28px 36px;
+  }
+  header{
+    text-align:center;
+    margin-bottom: 14px;
+  }
+  h1{
+    font-size: 28px;
+    letter-spacing:.3px;
+    margin: 0 0 6px 0;
+    font-weight: 750;
+  }
+  .contact{
+    font-size: 13.5px;
+    color:var(--muted);
+    display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+  }
+  .contact a{color:var(--muted); text-decoration:none; border-bottom:1px dotted transparent}
+  .contact a:hover{color:var(--accent); border-bottom-color:var(--accent)}
+  hr{
+    border:0; border-top: 2px solid var(--rule); margin: 14px 0 18px;
+  }
+  h2{
+    font-size: 14.5px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    margin: 18px 0 6px;
+    padding-top: 4px;
+    border-top: 0 solid transparent;
+  }
+  .tagline{
+    font-weight: 700; color:#222; margin-bottom:6px;
+  }
+  .blurb{color:#222; margin:0 0 10px}
+  .grid{
+    display:grid; 
+    grid-template-columns: 1fr;
+    gap:10px 20px;
+  }
+  .item h3{
+    margin: 0 0 2px; font-size: 14.5px;
+  }
+  .sub{
+    color:var(--muted); font-size: 13.5px; margin-bottom: 6px;
+  }
+  ul{
+    margin: 6px 0 10px 18px;
+  }
+  li{margin: 4px 0}
+  .skills{
+    columns: 2; column-gap: 24px;
+  }
+  .skills p{break-inside: avoid; margin: 6px 0}
+  .skill-head{font-weight:700}
+  .pill{
+    display:inline-block; padding:.1rem .45rem; border:1px solid var(--rule); border-radius:999px; margin:2px 4px 0 0; font-size: 12.5px; color:#333
+  }
+  /* Print tweaks */
+  @media print{
+    body{background:#fff}
+    .page{box-shadow:none; margin:0; padding:0}
+    a{color:inherit; text-decoration:none}
+  }
+</style>
+</head>
+<body>
+  <main class="page" role="main" aria-label="Resume: Sean Kehoe">
+    <header>
+      <h1>Sean Kehoe</h1>
+      <div class="contact">
+        <a href="tel:+12485551234" aria-label="Phone">(248) 555-1234</a>
+        <span>•</span>
+        <a href="mailto:smkehoe@oakland.edu">smkehoe@oakland.edu</a>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- Career Focus -->
+    <section aria-labelledby="career-focus">
+      <h2 id="career-focus"> Career Focus: Software Development</h2>
+                <p>Information Technology senior skilled with multiple programming languages with particular focus on C++.
+                    Quick learner with strong problem-solving skills and an amiable personality that lends well to teamwork.</p>
+    </section>
+
+    <!-- Education -->
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="item">
+        <h3>Bachelor of Science in Information Technology — GPA: 3.89/4.0</h3>
+        <div class="sub">Oakland University, Rochester, MI — <strong>Expected Graduation: May 2026</strong></div>
+      </div>
+      <div class="item">
+        <h3>Bachelor of Arts in Anthropology and Japanese Language and Literature</h3>
+        <div class="sub">Oakland University, Rochester, MI — <strong>Graduated: December 2016</strong></div>
+      </div>
+      <div class="item">
+        <h3>Associate's of Applied Science in Information Technology — GPA: 3.929/4.0</h3>
+        <div class="sub">Macomb Community College, Macomb County, MI — <strong>Graduated 2022</strong></div>
+      </div>
+    </section>
+
+    <!-- Engineering Course Projects -->
+    <section aria-labelledby="projects">
+      <h2 id="projects">Engineering Course Projects</h2>
+
+      <div class="item">
+        <h3>AI Enhanced Pantry Database <span class="sub">(CSI 4160 Integrated Computer Systems)</span></h3>
+                    <ul>
+                      <li>Built an app that allowed users to store their pantry contents digitally and use an AI to better ascertain if an ingredient has rotted.</li>
+                      <li>Implemented SQLite for persistent storage and integrated the USDA API to retrieve nutritional info.</li>
+                      <li>Implemented a recipe generation feature using ingredients present in the pantry database.</li>
+                    </ul>
+      </div>
+
+      <div class="item">
+        <h3>Echoes of the Colosseum: A Game for the Blind <span class="sub">(CSI 3370 Software Engineer and Practice)</span></h3>
+        <ul>
+          <li>Designed a text based game utilizing the command line interface in Python</li>
+          <li>Created a simple story told through environmental story telling and first person accounts.</li>
+          <li>Utilized random procedural map generation to improve replayability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Other Professional Experience -->
+    <section aria-labelledby="other-exp">
+      <h2 id="other-exp">Other Professional Experience</h2>
+      <div class="item">
+        <h3>Math &amp; Coding Tutor | Rochester Hills, MI</h3>
+        <div class="sub">Jan 2023 – Aug 2024</div>
+        <ul>
+          <li>Tutored high school students in Python, Java, and Algebra.</li>
+          <li>Created personalized lesson plans and coding exercises to reinforce problem-solving skills.</li>
+          <li>Helped students improve average grades by one letter grade.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section aria-labelledby="skills">
+      <h2 id="skills">Technical Skills</h2>
+      <div class="skills">
+        <p><span class="skill-head">Programming Languages:</span>
+          <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C++</span><span class="pill">C#</span><span class="pill">C</span>
+          <span class="pill">JavaScript</span><span class="pill">SQL</span><span class="pill">HTML/CSS</span>
+        </p>
+        <p><span class="skill-head">Design Skills:</span>
+          <span class="pill">Responsive Design</span><span class="pill">Accessibility (WCAG)</span><span class="pill">UX Wireframing</span>
+        </p>
+        <p><span class="skill-head">Software &amp; Tools:</span>
+          <span class="pill">Visual Studio</span><span class="pill">Git/GitHub</span><span class="pill">Eclipse</span>
+          <span class="pill">VS Code</span><span class="pill">MySQL</span><span class="pill">Figma</span><span class="pill">Microsoft Office</span>
+        </p>
+        <p><span class="skill-head">Operating Systems:</span>
+          <span class="pill">Windows</span><span class="pill">macOS</span><span class="pill">Linux</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Activities & Achievements -->
+    <section aria-labelledby="activities">
+      <h2 id="activities">Activities &amp; Achievements</h2>
+      <ul>
+        <li>Member, Women in Computing (OU chapter) — organized coding workshops for high school girls.</li>
+        <li>Dean’s List, 4 consecutive semesters.</li>
+        <li>Hackathon Participant — OU Hack Day 2024 (team project: “EcoTrack” app for recycling).</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
